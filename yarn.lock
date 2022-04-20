@@ -2309,7 +2309,7 @@
 
 "@storybook/builder-webpack5@^6.4.22":
   version "6.4.22"
-  resolved "https://registry.npmmirror.com/@storybook/builder-webpack5/-/builder-webpack5-6.4.22.tgz#cd10b3b307f4a6f9c474d3b72ba5555055395681"
+  resolved "http://127.0.0.1:4873/@storybook%2fbuilder-webpack5/-/builder-webpack5-6.4.22.tgz#cd10b3b307f4a6f9c474d3b72ba5555055395681"
   integrity sha512-vvQ0HgkIIVz+cmaCXIRor0UFZbGZqh4aV0ISSof60BjdW5ld+R+XCr/bdTU6Zg8b2fL9CXh7/LE6fImnIMpRIA==
   dependencies:
     "@babel/core" "^7.12.10"

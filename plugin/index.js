@@ -14,13 +14,17 @@ const ydComponents = plugin(
   {
     //   主题的扩展
     theme: {
-      colors: {
-        // <div class='text-yd-slecet-hover'></div>
-        // 可以用-连接而不用像官网
-        // 'yd-slecet-hover': "var(--sc-bgcolor)"
-      },
-      extend: {},
-    },
+      // colors: {
+      //   // <div class='text-yd-slecet-hover'></div>
+      //   // 可以用-连接而不用像官网
+      //   // 'yd-slecet-hover': "var(--sc-bgcolor)"
+      // },
+      extend: {
+        colors: {
+          'pink-kk': "red"
+        },
+      }
+    }
   }
 );
 

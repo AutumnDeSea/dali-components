@@ -1,9 +1,9 @@
-/* @tailwind base; */
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 #root {
-    padding: 20px;
-  }
+  padding: 20px;
+}
 body {
-    background: var(--sc-bgcolor);
+  background: var(--sc-bgcolor);
 }
