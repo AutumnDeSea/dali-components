@@ -149,6 +149,8 @@ module.exports = function (webpackEnv) {
                   'postcss-normalize',
                 ]
               : [
+                  'postcss-import',
+                  "tailwindcss/nesting",
                   'tailwindcss',
                   'postcss-flexbugs-fixes',
                   [

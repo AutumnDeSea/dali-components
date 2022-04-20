@@ -3,6 +3,7 @@ module.exports = {
     "postcss-import",
     "tailwindcss/nesting",
     "tailwindcss",
+    "postcss-flexbugs-fixes",
     [
       "postcss-preset-env", // 允许你使用未来的 CSS 特性
       { 
