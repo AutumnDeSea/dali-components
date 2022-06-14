@@ -27,9 +27,6 @@ module.exports = {
       ...config.resolve?.alias,
       '@': [resolve(__dirname, "../src/")]
     }
-    // const instance = (await presets.apply('webpackInstance'))?.default;
-  
-    // logger.info(`=> Running in webpack ${version}: ${instance}`);
     return config;
   }
 }
