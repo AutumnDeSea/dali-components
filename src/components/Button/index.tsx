@@ -1,48 +1,25 @@
-import React from 'react';
-import './button.css';
-
+import { Button as MuiButton } from '@mui/material';
 interface ButtonProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary?: boolean;
-  /**
-   * What background color to use
-   */
-  backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: 'small' | 'medium' | 'large';
-  /**
-   * 按钮内容
-   */
-  label: string;
-  /**
-   * Optional click handler
-   */
-  onClick?: () => void;
+    /**
+     * 按钮的类型
+     */
+    variant?: 'text' | 'contained' | 'outlined',
+    /**
+     * 按钮的尺寸
+     */
+    size?: 'small'| 'medium' | 'large',
+    /**
+     * 按钮的颜色
+     */
+    color?: 'success' | 'secondary' | 'error',
+    children?: React.ReactNode;
 }
-
-/**
- * Primary UI component for user interaction
- */
-export const Button = ({
-  primary = false,
-  size = 'medium',
-  backgroundColor,
-  label,
-  ...props
-}: ButtonProps) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+export const Button = (props: ButtonProps = {
+  variant: 'contained',
+  size: 'medium'
+}) => {
+    console.log('🚗--》', props)
   return (
-    <button
-      type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
-      {...props}
-    >
-      {label}
-    </button>
+    <MuiButton {...props}>{props.children}</MuiButton>
   );
 };

@@ -4,7 +4,7 @@ const ydStyles = {
   },
   '#root,.theme-light': {
     '--sc-bgcolor': 'rgb(255, 255, 255)',
-  },
+  }
 };
 
 

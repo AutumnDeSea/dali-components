@@ -1,5 +1,5 @@
 import { addons } from '@storybook/addons';
-import theme from './ydTheme';
+import theme from './dlTheme';
 
 addons.setConfig({
   sidebar: {

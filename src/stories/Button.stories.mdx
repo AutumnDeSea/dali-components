@@ -1,0 +1,47 @@
+import { Meta, Story, Preview, Props } from '@storybook/addon-docs';
+import { withKnobs, select, boolean } from '@storybook/addon-knobs';
+
+import { Button } from '../components/Button';
+const Template= (args) => <Button {...args}>{args.children}</Button>;
+
+<Story 
+  name="Default"
+  args={{ 
+    variant: 'text',
+    children: 'button'
+  }}>
+  {Template.bind({})}
+</Story>
+
+<Meta title="Example/Button"
+  component={Button} />
+
+# 文档
+
+# variant
+
+<!-- todo 这里需要进行margin-right: 20的排版 -->
+
+<Preview withToolbar>
+  <Story name="variant">
+    <Button variant="text">Button</Button>
+    <Button variant='contained'>Button</Button>
+    <Button  variant='outline'>Button</Button>
+  </Story>
+</Preview> 
+
+# size
+<Preview withToolbar>
+  <Story name="size">
+    <Button size='small'>Button</Button>
+    <Button size='medium'>Button</Button>
+    <Button size='large'>Button</Button>
+  </Story>
+</Preview>
+
+
+
+
+
+
+

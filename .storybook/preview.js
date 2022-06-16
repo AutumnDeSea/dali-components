@@ -8,22 +8,22 @@ const defaultTheme = createTheme({
     mode: 'dark',
   },
 });
-
+//parameters 功能和插件的行为。
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   themes: {
-    default: 'yddark',
+    default: 'dark',
     disabled: true,
     list: [
-      { name: 'yddark', class: '', color: '#1b1b24' },
-      { name: 'ydlight', class: 'theme-light', color: '#ffff' },
+      { name: 'dark', class: 'theme-dark', color: '#1b1b24' },
+      { name: 'light', class: 'theme-light', color: '#ffff' },
     ],
   },
   controls: {
     matchers: {
       color: /(background|color)$/i,
       date: /Date$/,
-    },
+    }
   },
   docs: {
     theme: {
@@ -53,5 +53,5 @@ const withThemeProvider = (Story, context) => {
     </Emotion10ThemeProvider>
   );
 };
-
+// 全局的装饰器
 export const decorators = [withThemeProvider];

@@ -9,6 +9,7 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
+    "@storybook/addon-docs",
     {
       name: '@storybook/addon-postcss', // 支持css，所以针对preview.js中import css并不支持
       options: {
@@ -31,6 +32,11 @@ module.exports = {
       ...config.resolve?.alias,
       '@': [resolve(__dirname, "../src/")]
     }
+    // config.resolve.extensions = ['.js', '.ts', '.tsx', 'jsx', '.css']
     return config;
   },
+  reactOptions: { 
+    legacyRootApi: true,
+    fastRefresh: true
+  }
 }

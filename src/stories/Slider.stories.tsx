@@ -8,3 +8,4 @@ export default {
 const Template: ComponentStory<typeof CustomSlider> = () => <CustomSlider />;
 
 export const Index = Template.bind({});
+

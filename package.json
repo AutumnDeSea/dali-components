@@ -13,6 +13,7 @@
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.4.1",
+    "@types/mdx": "^2.0.2",
     "@types/node": "^16.11.27",
     "@types/react": "^18.0.5",
     "@types/react-dom": "^18.0.1",
@@ -149,8 +150,10 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-docs": "6.4.22",
     "@storybook/addon-essentials": "^6.4.22",
     "@storybook/addon-interactions": "^6.4.22",
+    "@storybook/addon-knobs": "^6.4.0",
     "@storybook/addon-links": "^6.4.22",
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/builder-webpack5": "^6.4.22",
